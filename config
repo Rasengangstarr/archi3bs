@@ -53,6 +53,15 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec LIBGL_ALWAYS_SOFTWARE=1 alacritty 
 
+for_window [ title="floatnf" ] floating enable
+for_window [ title="floatnf" ] resize set 640 310 
+
+for_window [ title="floatht" ] floating enable
+for_window [ title="floatht" ] resize set 640 420 
+
+bindsym $mod+Shift+Return exec LIBGL_ALWAYS_SOFTWARE=1 alacritty -t floatnf
+bindsym $mod+Mod1+Return exec LIBGL_ALWAYS_SOFTWARE=1 alacritty -t floatht -e htop
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
