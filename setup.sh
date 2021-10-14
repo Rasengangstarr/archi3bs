@@ -17,7 +17,7 @@ sudo pacman --needed -S - < pkglist.txt
 rm $MYHOME/.bashrc
 ln .bashrc $MYHOME/.bashrc
 rm $MYHOME/.config/i3/config
-ln .bashrc $MYHOME/.config/i3/config
+ln config $MYHOME/.config/i3/config
 
 # get ezwall utility
 git clone https://github.com/Rasengangstarr/EzWall $MYHOME/docs/projects/EzWall
